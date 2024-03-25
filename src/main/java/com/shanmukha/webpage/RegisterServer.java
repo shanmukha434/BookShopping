@@ -37,7 +37,7 @@ public class RegisterServer extends HttpServlet {
 //		 final String query="insert into bookdata(bookname,bookedition,bookprice) vaalues(?,?,?)";
 		String url="jdbc:mysql://localhost:3306/shanmukha";
 		String uname="root";
-		String pass="Shanmukh@18";
+		String pass="";
 		try {
 			Class.forName("com.mysql.jdbc.Driver");
 			
