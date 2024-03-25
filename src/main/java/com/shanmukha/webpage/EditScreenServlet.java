@@ -35,7 +35,7 @@ public class EditScreenServlet extends HttpServlet {
 //        try (Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/shanmukha", "root", "Shanmukh@18"); 
 //        	PreparedStatement ps = con.prepareStatement(query);) 
         try{
-        	Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/shanmukha", "root", "Shanmukh@18"); 
+        	Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/shanmukha", "root", ""); 
         	PreparedStatement ps = con.prepareStatement(query);
             ps.setInt(1, id);
             ResultSet rs = ps.executeQuery();
