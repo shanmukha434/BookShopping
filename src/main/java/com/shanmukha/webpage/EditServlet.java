@@ -35,7 +35,7 @@ public class EditServlet extends HttpServlet {
             cnf.printStackTrace();
         }
         //generate the connection
-        try (Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/shanmukha", "root", "Shanmukh@18");
+        try (Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/shanmukha", "root", "");
         		PreparedStatement ps = con.prepareStatement(query);) {
             ps.setString(1, bookName);
             ps.setString(2, bookEdition);
